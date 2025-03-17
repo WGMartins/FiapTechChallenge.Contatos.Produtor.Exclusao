@@ -7,7 +7,7 @@ using OpenTelemetry.Trace;
 using Prometheus;
 using RabbitMQ.Client;
 using System.Text.Json.Serialization;
-using TechChallenge.UseCase.ContatoUseCase.Remover;
+using UseCase.ContatoUseCase.Remover;
 using UseCase.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);

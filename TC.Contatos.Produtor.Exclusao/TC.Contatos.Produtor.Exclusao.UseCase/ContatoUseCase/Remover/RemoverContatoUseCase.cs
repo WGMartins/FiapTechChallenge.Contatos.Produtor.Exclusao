@@ -1,6 +1,6 @@
 ﻿using UseCase.Interfaces;
 
-namespace TechChallenge.UseCase.ContatoUseCase.Remover
+namespace UseCase.ContatoUseCase.Remover
 {
     public class RemoverContatoUseCase : IRemoverContatoUseCase
     {

@@ -1,9 +1,9 @@
 ﻿using Moq;
-using TechChallenge.UnitTest.UseCase.Shared;
-using TechChallenge.UseCase.ContatoUseCase.Remover;
+using UnitTest.UseCase.Shared;
+using UseCase.ContatoUseCase.Remover;
 using UseCase.Interfaces;
 
-namespace TechChallenge.UnitTest.UseCase.ContatoUseCase.Remover
+namespace UnitTest.UseCase.ContatoUseCase.Remover
 {
     public class RemoverRegionalUseCaseTest
     {
@@ -28,7 +28,7 @@ namespace TechChallenge.UnitTest.UseCase.ContatoUseCase.Remover
             _removerContatoUseCase.Remover(Guid.NewGuid());
 
             // Assert            
-            _messagePublisher.Verify(x => x.PublishAsync(It.IsAny<Guid>()), Times.Once());            
-        }        
+            _messagePublisher.Verify(x => x.PublishAsync(It.IsAny<Guid>()), Times.Once());
+        }
     }
 }
