@@ -56,6 +56,7 @@ builder.Services.AddSingleton<ConnectionFactory>(sp =>
         HostName = settings.HostName,
         UserName = settings.UserName,
         Password = settings.Password,
+        VirtualHost = settings.VirtualHost,
     };
 });
 
