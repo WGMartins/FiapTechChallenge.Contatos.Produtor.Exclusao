@@ -4,10 +4,17 @@
 name: .NET
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
+env:
+  REGISTRY_NAME: fiaptechchallenge
+  CLUSTER_NAME: FiapTechChallengeAKS
+  CLUSTER_RESOURCE_GROUP: FiapTechChallenge
+  NAMESPACE: default
 
 jobs:
   build:
