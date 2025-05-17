@@ -12,6 +12,8 @@ using UseCase.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddEnvironmentVariables();
+
 var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
 const string serviceName = "TC.Contatos.Produtor.Exclusao";
